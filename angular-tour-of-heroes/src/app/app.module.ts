@@ -19,6 +19,11 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     HeroDetailComponent,
     MessagesComponent,
     DashboardComponent,
+  ],
+  imports: [
+    BrowserModule,
+    FormsModule,
+    AppRoutingModule,
     HttpClientModule,
 
     // The HttpClientInMemoryWebApiModule module intercepts HTTP requests
@@ -27,12 +32,6 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     HttpClientInMemoryWebApiModule.forRoot(
       InMemoryDataService, { dataEncapsulation: false }
     )
-  ],
-  imports: [
-    HttpClientModule,
-    BrowserModule,
-    FormsModule,
-    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
